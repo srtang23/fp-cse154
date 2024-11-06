@@ -1,0 +1,149 @@
+/*
+  Name: Louisa Chen; Sophia Tang
+  Date: Nov 1, 2023
+  Section: CSE 154 AF, AD
+  This is the find_course.css page for the the MyPlan web page find course
+  function for CSE 154 final project.
+  This css contains all the styling for find course function in the html pages.
+*/
+
+.search-container {
+  display: flex;
+}
+
+.course-container {
+  flex: 3;
+  font-size: 16px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(55, 44, 44, 0.1);
+}
+
+.course-display h2 {
+  float: left;
+}
+
+.course-display table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.course-display th {
+  text-align: left;
+}
+
+.course-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/*
+
+.filter-courses {
+  padding: 20px;
+  margin-left: 139px;
+  margin-right: 139px;
+}
+
+.filter-courses .prerequisite-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.filter-courses .prerequisite-checkbox input[type="checkbox"] {
+  margin-left: 8px;
+} */
+
+.filter-courses {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-courses h3 {
+  margin-right: 10px;
+}
+
+.prerequisite-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+#search-term {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: text;
+  display: block;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #e4c2a2;
+}
+
+#search header h1 {
+  font-style: inherit;
+  font-family: 'Lora', serif;
+  padding: 20px;
+  margin-top: 0px;
+  margin-left: 139px;
+  margin-bottom: 0px;
+}
+
+.add-course-btn {
+  background-color: #efddb4;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-course-btn:hover {
+  background-color: #e4c2a2;
+}
+
+.course-code {
+  cursor: pointer;
+}
+
+.course-code:hover {
+  text-decoration: underline #6d4c41;
+}
+
+.course-overview {
+  padding: 20px;
+}
+
+.course-sections {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.section-info {
+  text-align: center;
+}
+
+.highlighted {
+  background-color: #e4c2a2;
+}
+
+#prereq {
+  cursor: pointer;
+}
+
+.course-overview h4 {
+  text-align: center;
+  color: red;
+}

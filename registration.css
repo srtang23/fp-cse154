@@ -1,0 +1,111 @@
+/*
+  Name: Louisa Chen; Sophia Tang
+  Date: Nov 1, 2023
+  Section: CSE 154 AF, AD
+  This is the registration.css page for the the MyPlan web page
+  registration part for CSE 154 final project.
+  This css contains all the styling for registration function in the html pages.
+*/
+
+#cart-display {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#text-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#register-btn {
+  flex: 1;
+  width: 30%;
+  color: black;
+}
+
+#text-btn h1 {
+  flex: 13;
+  text-align: center;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#planned-preview {
+  flex: 2;
+  margin-right: 20px;
+}
+
+#registration {
+  flex: 1;
+  margin-left: 20px;
+}
+
+#planned-preview, #registration {
+  background-color: white;
+  width: 45%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#planned-preview h2, #registration h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+#planned-preview h2 {
+  text-align: left;
+}
+
+.planned-courses, .registered-courses {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.planned-courses header, .registered-courses header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.p-credit, .r-credit {
+  background-color: #6d4c41;
+  color: white;
+  padding: 1px 5px;
+}
+
+.p-avail {
+  color: black;
+  background-color: #f2f2f2;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+#course-date {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.course-avail {
+  display: inline-block;
+}
+
+.p-credit {
+  margin-bottom: 5px;
+}
+
+.planned-courses h3, .registered-courses h3 {
+  margin-top: 0%;
+  margin-bottom: 10px;
+  padding: 2;
+}
+
+.r-section, .r-sln, .r-type, .p-section, .p-sln, .p-type {
+  padding-top: 5px;
+  margin-right: 5px;
+}
