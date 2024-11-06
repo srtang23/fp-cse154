@@ -1,0 +1,53 @@
+/*
+  Name: Louisa Chen; Sophia Tang
+  Date: Nov 1, 2023
+  Section: CSE 154 AF, AD
+  This is the profile.css page for the the MyPlan web page profile part for CSE 154 final project.
+  This css contains all the styling for profile function in the html pages.
+*/
+
+#profile-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.layout-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#courses-taken-container h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.courses-taken {
+  padding: 0;
+}
+
+.courses-taken p {
+  text-align: center;
+}
+
+.courses-taken li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#user-protrait img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
+
+.username {
+  font-size: 24px;
+  color: #333;
+}

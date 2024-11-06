@@ -1,0 +1,96 @@
+/*
+  Name: Louisa Chen; Sophia Tang
+  Date: Nov 1, 2023
+  Section: CSE 154 AF, AD
+  This is the home_page.css page for the the MyPlan web page home page part
+  for CSE 154 final project.
+  This css contains all the styling for home page part in the html pages.
+*/
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+body h2 {
+  text-align: center;
+}
+
+.image {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.image img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+#home-link, #regist {
+  color: #111;
+  background-color: #f2e4c3;
+}
+
+#home-btn:hover, #profile-btn:hover, #cart-btn:hover {
+  background-color: #e4c2a2;
+}
+
+#home-btn, #profile-btn, #cart-btn {
+  color: #111;
+  background-color: #efddb4;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+#profile-cart-container {
+  display: flex;
+}
+
+nav ul li button, nav ul li a {
+  display: inline-block;
+  padding: 20px 40px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: #efddb4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Arial", sans-serif;
+  font-size: medium;
+}
+
+nav ul li button {
+  width: 100%;
+}
+
+nav ul li a {
+  width: auto;
+}
+
+nav ul li a:hover {
+  background-color: #e4c2a2;
+}
+
+#back-btn {
+  flex: 1;
+  width: 8%;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.courses-taken li {
+  list-style: none;
+  text-align: center;
+}

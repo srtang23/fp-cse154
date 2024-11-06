@@ -1,0 +1,164 @@
+<!--
+  Names: Louisa Chen, Sophia Tang
+  Date: November 1, 2023
+  Section: CSE 154 AF, AD
+  This is the index.html for the MyPlan web application, part of the CSE 154
+  final project.
+  This HTML page includes the website's all the functions, such as the profile,
+  registration, course searching, and registration.
+-->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>MyPlan Homepage</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="home_page.css" rel="stylesheet">
+    <link href="find_course.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+    <link href="registration.css" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <ul class="top-navbar hidden">
+      <li><button id="home-btn">Home</button></li>
+      <li id="profile-cart-container">
+        <button id="profile-btn">Profile</button>
+        <button id="cart-btn">WI24</button>
+      </li>
+    </ul>
+
+    <section id="login">
+      <form>
+        <h1> Student Login </h1>
+        <div class="login-container">
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" type="text"
+            placeholder="Enter Username (eg. Louisa)" name="username" required>
+          </div>
+          <div>
+            <label for="password">Password : </label>
+            <input id="password" type="password"
+            placeholder="Enter Password (eg. 123)" name="password" required>
+          </div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="home" class="hidden">
+
+      <section class="image">
+        <img src="img/cse_building.jpeg" alt="CSE building picture">
+      </section>
+
+      <article>
+        <h2>Create and manage your academic plan</h2>
+        <nav>
+          <ul>
+            <li><button id="find-course-btn">Find Course</button></li>
+          </ul>
+        </nav>
+      </article>
+    </section>
+
+    <section id="search" class="hidden">
+      <header>
+        <h1>Find Courses</h1>
+      </header>
+      <label for="search-term"><strong>Course search by:</strong></label>
+      <input id="search-term" type="text" placeholder="e.g. 154, data programming, 4">
+      <button id='search-btn'>Search</button>
+      <label for="search-btn"> Try: course code, title, or credits </label>
+      <section class="filter-courses">
+        <h3>Exclude options:</h3>
+        <label for="prereq" class="prerequisite-checkbox">
+          Has Prerequisites
+          <input type="checkbox" id="prereq">
+        </label>
+      </section>
+
+      <section class="course-container hidden">
+        <div class="course-display hidden">
+          <h2> COURSES </h2>
+          <table>
+            <thead>
+              <tr id="course-display-container">
+                <th>COURSE CODE</th>
+                <th>COURSE TITLE</th>
+                <th>QUARTER OFFERED</th>
+                <th>CREDITS</th>
+              </tr>
+            </thead>
+            <tbody class="course-info">
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <!-- individual course view -->
+    <section id="course" class="hidden">
+      <button id="back-btn">Back</button>
+      <article class="course-overview"></article>
+      <table class="course-sections">
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Type</th>
+            <th>Instructor</th>
+            <th>Meeting Time</th>
+            <th>SLN</th>
+            <th>Est ENRL Status</th>
+            <!-- <th> </th> -->
+          </tr>
+        </thead>
+        <tbody class="section-info"></tbody>
+      </table>
+    </section>
+
+    <section id="profile" class="hidden">
+      <section id="profile-container">
+        <div id="user-protrait">
+          <img src="img/cse_building.jpeg" alt="User Profile Picture" class="profile-picture">
+        </div>
+        <div id="courses-taken-container">
+          <h2>Courses Taken</h2>
+          <ul class="courses-taken">
+          </ul>
+        </div>
+      </section>
+      <section id="switch-view-container">
+        <button id="switch-btn">Switch View</button>
+      </section>
+    </section>
+
+    <section id="cart" class="hidden">
+      <section id="cart-display">
+        <section id="planned-preview">
+          <h2>Registration Preview</h2>
+          <button id="register-btn">Send To Registration</button>
+        </section>
+        <section id="registration">
+          <h2>Registered Courses</h2>
+        </section>
+      </section>
+    </section>
+
+
+    <h2 id="error" class="hidden">
+      The server just crashed. Please refresh the page and try again!
+    </h2>
+
+    <footer>
+      <p>&copy; Autumn 2023 CSE 154 Final Project | MyPlan</p>
+    </footer>
+
+  </body>
+
+</html>
